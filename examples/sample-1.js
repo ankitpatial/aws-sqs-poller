@@ -1,12 +1,12 @@
 var Poller = require('../lib/poller'),
     logger = require('../lib/logger'),
     options = {
-        name: "",
-        accessKeyId: "",
-        secretAccessKey: ""
+        name: "img-jobs",
+        accessKeyId: "AKIAJTEWTJNW25QOFYGQ",
+        secretAccessKey: "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"
     };
 
-logger.level("info");
+logger.level("debug");
 
 var poll1 = new Poller(options);
 
