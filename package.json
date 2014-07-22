@@ -23,6 +23,7 @@
   "homepage": "https://github.com/ankitpatial/aws-sqs-poller",
   "dependencies": {
     "aws-sdk": "^2.0.8",
+    "aws-sqs-promises": "0.0.1",
     "bunyan": "^0.23.1",
     "q": "^1.0.1"
   },
