@@ -1,9 +1,9 @@
 var Poller = require('../lib/poller'),
     logger = require('../lib/logger'),
     options = {
-        name: "img-jobs",
-        accessKeyId: "AKIAJTEWTJNW25QOFYGQ",
-        secretAccessKey: "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"
+        name: "",
+        accessKeyId: "",
+        secretAccessKey: ""
     };
 
 logger.level("debug");
