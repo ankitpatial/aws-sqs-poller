@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "description": "Polling aws simple queue messages.",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "mocah test"
   },
@@ -23,7 +24,7 @@
   "homepage": "https://github.com/ankitpatial/aws-sqs-poller",
   "dependencies": {
     "aws-sdk": "^2.0.8",
-    "aws-sqs-promises": "0.0.1",
+    "aws-sqs-promises": "^0.0.2",
     "bunyan": "^0.23.1",
     "q": "^1.0.1"
   },
