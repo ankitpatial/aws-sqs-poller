@@ -16,11 +16,12 @@ that are using same message queue.
 ```
 var Poller  = require('aws-sqs-poller'),
     options = {
-        name            : "your-queue",     // required
-        accessKeyId     : "your-key",       // required
-        secretAccessKey : "your-secret",    // required
-        region          : 'us-west-1',      // optional, default is 'us-east-1'
-        maxMessages     : 4,                // optional, default is 10, must be between 1-10 
+        name            : "your-queue",             // required
+        useIAMRole      : true                      // optional
+        accessKeyId     : 'aws-key',                // required if useIAMRole = false 
+        secretAccessKey : 'aws-secret-access-key',  // required if useIAMRole = false
+        region          : 'us-west-1',              // optional, default is 'us-east-1'
+        maxMessages     : 4,                        // optional, default is 10, must be between 1-10 
     };
 
 var myQueue = new Poller(options);
@@ -32,14 +33,19 @@ myQueue.on('message', function (msg) {  // will emitted on first message or on c
     * Your business logix
     */
    
-    
-    msg.remove();                       // in case you want to remove the current message from queue.
-    myQueue.next();                     // move to next message
+    // Want to delete message from SQS.
+    msg.remove();
+                           
+    // Move to next message
+    myQueue.next();                     
 });
 
 ```
 
 ### Change List
+#### 0.0.9
+- README changes
 #### 0.0.8
+- new option.useIAMRole for production use
 - Upgrade packages
 - Removed incomplete test cases and unwanted packages, package is much leaner now
