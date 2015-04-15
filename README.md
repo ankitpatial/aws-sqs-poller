@@ -38,3 +38,8 @@ myQueue.on('message', function (msg) {  // will emitted on first message or on c
 });
 
 ```
+
+### Change List
+#### 0.0.8
+- Upgrade packages
+- Removed incomplete test cases and unwanted packages, package is much leaner now
