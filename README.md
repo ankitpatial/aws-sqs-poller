@@ -29,10 +29,14 @@ var myQueue = new Poller(options);
 myQueue.start();                        // calling this will start the poller
 myQueue.on('message', function (msg) {  // will emitted on first message or on calling mqQueue.next()
     
+    console.log('handle: ', msg.receiptHandle);
+    console.log('data: ', msg.body); // internally will try parese it as JSON
+    console.log('md5: ', msg.md5OfBody); 
+    
     /*
     * Your business logix
     */
-   
+      
     // Want to delete message from SQS.
     msg.remove();
                            
