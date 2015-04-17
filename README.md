@@ -43,6 +43,8 @@ myQueue.on('message', function (msg) {  // will emitted on first message or on c
 ```
 
 ### Change List
+#### 0.1.0
+- not to start poller if there is problem talking to Queue.
 #### 0.0.9
 - README changes
 #### 0.0.8
