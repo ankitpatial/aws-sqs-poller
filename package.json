@@ -1,6 +1,6 @@
 {
   "name": "aws-sqs-poller",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Polling aws simple queue messages.",
   "main": "index.js",
   "scripts": {
