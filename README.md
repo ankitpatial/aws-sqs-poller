@@ -47,6 +47,10 @@ myQueue.on('message', function (msg) {  // will emitted on first message or on c
 ```
 
 ### Change List
+#### 0.1.7
+- log message change
+#### 0.1.6
+- bug fix
 #### 0.1.4
 - bug fix, unable to pull message in some cases.
 #### 0.1.0
