@@ -1,6 +1,6 @@
 {
   "name": "aws-sqs-poller",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Polling aws simple queue messages.",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/ankitpatial/aws-sqs-poller",
   "dependencies": {
     "aws-sdk": "^2.1.23",
-    "aws-sqs-promises": "^0.1.5"
+    "aws-sqs-promises": "^0.1.6"
   },
   "devDependencies": {
   }
