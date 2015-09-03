@@ -47,6 +47,8 @@ myQueue.on('message', function (msg) {  // will emitted on first message or on c
 ```
 
 ### Change List
+#### 0.2.0
+- Bumped version. Added log process.pid as log prefix
 #### 0.1.8 - 0.1.12
 - code refactoring
 #### 0.1.7
